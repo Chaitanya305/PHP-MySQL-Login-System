@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y php libapache2-mod-php php
 ##RUN apt-get install -y php && apt-get install libapache2-mod-php && apt-get install -y php-mysql
 RUN apt-get install -y mysql-client
 
-COPY ./PHP-MySQL-Login-System /var/www/html
+COPY ./ /var/www/html
 RUN mv /var/www/html/index.html index.html_bkp
 CMD service apache2 start && sleep infinity
 
