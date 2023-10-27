@@ -10,5 +10,7 @@ RUN apt-get install -y mysql-client
 
 COPY ./PHP-MySQL-Login-System/ /var/www/html
 
+CMD service apache2 start && sleep infinity
+
 #RUN systemctl start apache2 && systemctl start mysql
 
