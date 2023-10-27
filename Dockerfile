@@ -9,8 +9,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y php libapache2-mod-php php
 RUN apt-get install -y mysql-client
 
 COPY ./PHP-MySQL-Login-System/ /var/www/html
+<<<<<<< HEAD
 RUN cd /var/www/html 
 RUN mv index.html index.html_bkp
+=======
+>>>>>>> 494853ba5f76ef0ac31ff1f3efd38a4b2b14a7ca
 
 CMD service apache2 start && sleep infinity
 
